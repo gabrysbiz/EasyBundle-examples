@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>biz.gabrys</groupId>
+	<artifactId>easy-bundle-examples</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+	<name>EasyBundle Examples</name>
+	<url>http://www.gabrys.biz/projects/EasyBundle/examples/</url>
+
+	<description>EasyBundle is simple library which supports internationalization. The library is dedicated for desktop applications.</description>
+	<inceptionYear>2013</inceptionYear>
+	<organization>
+		<name>gabrys.biz</name>
+		<url>http://www.gabrys.biz/</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>The BSD 3-Clause License</name>
+			<url>https://raw.githubusercontent.com/gabrysbiz/EasyBundle-examples/master/license.txt</url>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:git@github.com:gabrysbiz/EasyBundle-examples.git</connection>
+		<developerConnection>scm:git:git@github.com:gabrysbiz/EasyBundle-examples.git</developerConnection>
+		<url>https://github.com/gabrysbiz/EasyBundle-examples</url>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/gabrysbiz/EasyBundle-examples/issues</url>
+	</issueManagement>
+
+	<developers>
+		<developer>
+			<id>agabrys</id>
+			<name>Adam Gabryś</name>
+			<url>http://www.adam.gabrys.biz/</url>
+			<organization>gabrys.biz</organization>
+			<organizationUrl>http://www.gabrys.biz/</organizationUrl>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>1.0</module>
+	</modules>
+
+	<properties>
+		<easybundle.version>LATEST</easybundle.version>
+
+		<createChecksum>true</createChecksum>
+		<encoding>UTF-8</encoding>
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+		<maven.compiler.showWarnings>true</maven.compiler.showWarnings>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>biz.gabrys</groupId>
+			<artifactId>easy-bundle</artifactId>
+			<version>${easybundle.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>2.5.3</version>
+					<configuration>
+						<archive>
+							<addMavenDescriptor>false</addMavenDescriptor>
+							<manifest>
+								<addClasspath>true</addClasspath>
+								<mainClass>${easybundle.archive.mainClass}</mainClass>
+							</manifest>
+						</archive>
+						<descriptorRefs>
+							<descriptorRef>jar-with-dependencies</descriptorRef>
+						</descriptorRefs>
+					</configuration>
+					<executions>
+						<execution>
+							<id>make-assembly</id>
+							<phase>package</phase>
+							<goals>
+								<goal>single</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.5</version>
+					<configuration>
+						<archive>
+							<addMavenDescriptor>false</addMavenDescriptor>
+							<manifest>
+								<addClasspath>true</addClasspath>
+								<mainClass>${easybundle.archive.mainClass}</mainClass>
+							</manifest>
+						</archive>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
