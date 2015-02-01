@@ -8,8 +8,9 @@
 		<artifactId>easy-bundle-examples</artifactId>
 		<version>1.0</version>
 	</parent>
-	<artifactId>easy-bundle-1.0-example</artifactId>
-	<name>EasyBundle ${project.version} Example</name>
+	<artifactId>multiple-resource-factory</artifactId>
+	<name>Multiple Property Resource Factory &amp; Swing</name>
+	<description>Simple application using MultiplePropertyResourceBundleFactory and Swing.</description>
 
 	<properties>
 		<easybundle.version>1.0</easybundle.version>
