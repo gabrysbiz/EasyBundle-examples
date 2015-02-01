@@ -8,9 +8,9 @@
 	<version>1.0</version>
 	<packaging>pom</packaging>
 	<name>EasyBundle Examples</name>
+	<description>EasyBundle is simple library which supports internationalization. The library is dedicated for desktop applications.</description>
 	<url>http://www.gabrys.biz/projects/EasyBundle/examples/</url>
 
-	<description>EasyBundle is simple library which supports internationalization. The library is dedicated for desktop applications.</description>
 	<inceptionYear>2013</inceptionYear>
 	<organization>
 		<name>gabrys.biz</name>
@@ -47,7 +47,7 @@
 	</developers>
 
 	<modules>
-		<module>1.0</module>
+		<module>multiple-resource-factory</module>
 	</modules>
 
 	<properties>
