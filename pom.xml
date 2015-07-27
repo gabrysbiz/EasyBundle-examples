@@ -5,7 +5,7 @@
 
     <groupId>biz.gabrys</groupId>
     <artifactId>easy-bundle-examples</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2</version>
     <packaging>pom</packaging>
     <name>EasyBundle Examples</name>
     <description>EasyBundle library example projects.</description>
@@ -81,7 +81,7 @@
         <dependency>
             <groupId>biz.gabrys</groupId>
             <artifactId>easy-bundle</artifactId>
-            <version>1.2-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
