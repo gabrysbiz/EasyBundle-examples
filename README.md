@@ -4,4 +4,4 @@
 
 EasyBundle library example projects.
 
-Download binaries from [gabrys.biz](http://www.gabrys.biz/projects/EasyBundle/examples/).
+Download binaries from [gabrys.biz](http://easy-bundle.projects.gabrys.biz/examples/).

@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <name>EasyBundle Examples</name>
     <description>EasyBundle library example projects.</description>
-    <url>http://www.gabrys.biz/projects/EasyBundle/examples/</url>
+    <url>http://easy-bundle.projects.gabrys.biz/examples/</url>
 
     <inceptionYear>2013</inceptionYear>
     <organization>
@@ -24,8 +24,19 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <id>agabrys</id>
+            <name>Adam Gabryś</name>
+            <url>http://www.adam.gabrys.biz/</url>
+            <organization>gabrys.biz</organization>
+            <organizationUrl>http://www.gabrys.biz/</organizationUrl>
+            <timezone>Europe/Warsaw</timezone>
+        </developer>
+    </developers>
+
     <scm>
-        <connection>scm:git:git@github.com:gabrysbiz/EasyBundle-examples.git</connection>
+        <connection>scm:git:git://github.com/gabrysbiz/EasyBundle-examples.git</connection>
         <developerConnection>scm:git:git@github.com:gabrysbiz/EasyBundle-examples.git</developerConnection>
         <url>https://github.com/gabrysbiz/EasyBundle-examples</url>
     </scm>
@@ -52,17 +63,6 @@
             </snapshots>
         </repository>
     </repositories>
-
-    <developers>
-        <developer>
-            <id>agabrys</id>
-            <name>Adam Gabryś</name>
-            <url>http://www.adam.gabrys.biz/</url>
-            <organization>gabrys.biz</organization>
-            <organizationUrl>http://www.gabrys.biz/</organizationUrl>
-            <timezone>+1</timezone>
-        </developer>
-    </developers>
 
     <modules>
         <module>multiple-resource-factory</module>
