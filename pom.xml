@@ -5,7 +5,7 @@
 
     <groupId>biz.gabrys</groupId>
     <artifactId>easy-bundle-examples</artifactId>
-    <version>1.2</version>
+    <version>1.3.0</version>
     <packaging>pom</packaging>
     <name>EasyBundle Examples</name>
     <description>EasyBundle library example projects.</description>
